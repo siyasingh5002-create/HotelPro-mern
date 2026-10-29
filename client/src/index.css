@@ -1,0 +1,137 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --secondary-gradient: linear-gradient(135deg, #0d6efd 0%, #00d2ff 100%);
+  --accent-color: #ff6b6b;
+  --bg-light: #f8f9fa;
+  --text-dark: #2c3e50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient Navbar */
+.custom-navbar {
+  background: var(--primary-gradient) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff !important;
+}
+
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  margin: 0 5px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Cards & UI elements */
+.room-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.badge-delux {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-nondelux {
+  background: linear-gradient(135deg, #64748b, #475569);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Hero Carousel */
+.hero-carousel-img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.hero-caption {
+  bottom: 30%;
+}
+
+/* Admin Tabs */
+.admin-nav-tabs .nav-link {
+  color: #495057;
+  font-weight: 600;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 24px;
+}
+
+.admin-nav-tabs .nav-link.active {
+  color: #1e3c72;
+  border-bottom: 3px solid #1e3c72;
+  background-color: transparent;
+}
+
+/* Buttons */
+.btn-primary-gradient {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-gradient:hover {
+  opacity: 0.95;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.footer {
+  margin-top: auto;
+  background: #1a252f;
+  color: #bdc3c7;
+  padding: 24px 0;
+}
+
